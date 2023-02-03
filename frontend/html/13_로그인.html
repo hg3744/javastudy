@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13_로그인.html</title>
+  </head>
+  <body>
+    <h3>LOGIN</h3>
+    <form>
+      <table border="1">
+        <tr>
+          <th>아이디</th>
+          <td>
+            <input type="text" />
+          </td>
+          <td rowspan="2">
+            <input type="submit" value="로그인" />
+          </td>
+        </tr>
+        <tr>
+          <th>비밀번호</th>
+          <td>
+            <input type="password" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3"><input type="checkbox" />ID 저장</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <input type="button" value="회원가입" />
+            <input type="button" value="아이디/비번찾기" />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <!-- 주의 사항
+            예)잘못된 경우
+                <form>
+                        <form></form>            
+                </form>
+                
+            예)잘된 경우
+                <form></form>
+                <form></form>
+        -->
+  </body>
+</html>
