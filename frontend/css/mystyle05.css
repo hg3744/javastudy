@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* mystyle05.css */
+
+/* 참조 05_다양한selector.html */
+/*참조 https://www.w3schools.com/cssref/css_selectors.asp */
+
+/* 모든 <P> 요소 */
+p {
+  font-family: 궁서체;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+div p {
+  background-color: red;
+}
+
+/* 모든 <h2>, 모든<p> */
+h2,
+p {
+  color: blue;
+}
+
+/* 개나리, 해바라기에 글자 그림자 넣기 */
+div h2 {
+  text-shadow: 2px 2px #ccc;
+}
+
+/* 부모 > 자식 */
+div > span > p {
+  text-decoration: line-through;
+  text-decoration-color: yellow;
+}
+div > span > h2 {
+  color: hotpink;
+}
+
+#mybox {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid black;
+  margin: auto;
+}
+
+#menu {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+}
+/* 화면에 노출 안됨 */
+.hide {
+  width: 0;
+  height: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+#nav {
+  width: 300px;
+  height: 500px;
+  background-color: beige;
+  margin: auto;
+}
+/* id=nav의 자식중에서 ul태그 */
+#nav > ul {
+  list-style: none;
+}
+/* id=nav안에서 모든 class=news */
+#nav .news {
+  background-color: olive;
+  font-weight: bold;
+}
+
+#nav ul.news {
+  background-color: blue;
+}
+/* <li>요소중에서 2번째 */
+#nav > ol > li:nth-child(2) {
+  font-weight: bold;
+}
+
+/* 아이티윌 링크만 css적용 */
+#nav > ol > li > a {
+  width: 200px;
+  height: 100px;
+  background-color: hotpink;
+  text-decoration-style: wavy;
+}
+
+/*
+   참조 https://www.w3schools.com/cssref/sel_active.asp
+   a:link     - 일반적 링크 및 방문하지 않은 링크
+   a:visited  - 방문했던 링크
+   a:hover    - 마우스 올렸을 때 링크
+   a:active   - 마우스 누르는 순간의 링크
+*/
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+a:active {
+  color: black;
+  text-decoration: none;
+}
