@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>17_display.html</title>
+    <style>
+      #frame {
+        position: relative;
+        height: 150px;
+      }
+      #mydiv {
+        background-color: yellow;
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        overflow: scroll; /* scroll | hidden */
+        --display: block; /* none | block 화면출력*/
+        visibility: visible; /*hidden | visible 화면출력*/
+      }
+
+      p {
+        color: red;
+      }
+
+      p.ex1 {
+        display: none;
+      }
+      p.ex2 {
+        display: inline;
+      }
+      p.ex3 {
+        display: block;
+      }
+      p.ex4 {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- style="position:relative" 속성이 이미 있는 상태-->
+    <!-- 참조 https://www.w3schools.com/css/css_display_visibility.asp -->
+    <!-- CSS Layout - The display Property -->
+
+    <h3>CSS Layout - The display Property</h3>
+
+    <iframe
+      src="13_zindex.html"
+      frameborder="0"
+      width="200"
+      height="150"
+    ></iframe>
+    <hr />
+    <textarea cols="50" rows="10">약관</textarea>
+    <hr />
+    <div id="frame">
+      <div id="mydiv">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </div>
+    </div>
+    <hr />
+    <h3>display 세부 속성</h3>
+    <!-- display: none -->
+    <div style="display: none">무궁화</div>
+
+    <!-- block요소 : 가로영역 전부 채움. width와 height 크기 지정 가능  -->
+    <div style="background-color: red; width: 300px; height: 300px">오필승</div>
+    <div style="background-color: green">코리아</div>
+    <p style="background-color: blue">대한민국</p>
+    <header style="background-color: gold">무궁화</header>
+    <section style="background-color: gray">아이티윌</section>
+    <hr />
+
+    <!-- inline요소 -->
+    <!-- 내용만큼만 영역이 존재. 줄바꿈 되지 않음. width와 height크기 지정 불가능 -->
+    <span style="background-color: beige; width: 300px; height: 300px"
+      >개나리</span
+    >
+    <span style="background-color: brown">진달래</span>
+    <hr />
+
+    <!-- inline-block 줄바꿈이 되지 않지만 크기 지정 가능. inlin과 block 중간형태 -->
+    <!-- 참조 https://www.w3schools.com/cssref/pr_class_display.asp -->
+
+    <h1>The display Property</h1>
+
+    <h2>display: none:</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam
+      at erat pulvinar, at pulvinar felis blandit.
+      <p class="ex1">HELLO WORLD!</p>
+      Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </div>
+
+    <h2>display: inline:</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam
+      at erat pulvinar, at pulvinar felis blandit.
+      <p class="ex2">HELLO WORLD!</p>
+      Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </div>
+
+    <h2>display: block:</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam
+      at erat pulvinar, at pulvinar felis blandit.
+      <p class="ex3">HELLO WORLD!</p>
+      Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </div>
+
+    <h2>display: inline-block:</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam
+      at erat pulvinar, at pulvinar felis blandit.
+      <p class="ex4">HELLO WORLD!</p>
+      Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </div>
+  </body>
+</html>
