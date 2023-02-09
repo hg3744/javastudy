@@ -111,7 +111,15 @@
       //   문2) 세개의 수중에서 가장 큰값 (최대값)을 구하시오
       let x = 7,
         y = 5,
-        z = 1;
+        z = 9;
+
+      let max = x < y ? y : x;
+      //7<5  x에7대입됨
+
+      max = max < z ? z : max;
+      //max = 7 < 9  9
+
+      document.write(x + "," + y + "," + z + "중 최대값 :" + max);
     </script>
   </body>
 </html>
