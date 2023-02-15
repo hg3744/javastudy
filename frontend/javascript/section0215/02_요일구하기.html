@@ -86,6 +86,25 @@
           document.write("토요일");
           break;
       } //switch end
+
+      document.write("<hr>");
+
+      //문 ) 년도 cYear값의 띠를 출력하시오(12간지)
+      let animal = [
+        "원숭이",
+        "닭",
+        "개",
+        "돼지",
+        "쥐",
+        "소",
+        "호랑이",
+        "토끼",
+        "용",
+        "뱀",
+        "말",
+        "양",
+      ];
+      document.write("띠 : " + animal[cYear % 12]);
     </script>
   </body>
 </html>
