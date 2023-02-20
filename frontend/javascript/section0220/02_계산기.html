@@ -134,8 +134,16 @@
       } //operator() end
 
       function compute() {
-        alert(op);
-        alert(num1);
+        //alert(op);
+        //alert(num1);
+        //실제 계산을 해서 결과값 출력하기
+
+        //8)게산에 필요한 두번째 수를 num2에 저장하기
+        num2 = Number(document.getElementById("result").value);
+
+        //참조 https://www.w3schools.com/jsref/jsref_eval.asp
+        //9)계산해서 결과 출력하기
+        document.getElementById("result").value = eval(num1 + op + num2);
       } //compute() end
     </script>
   </body>
